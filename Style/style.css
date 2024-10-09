@@ -1,0 +1,247 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  p,h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+  }
+  
+  a {
+        display: inline-block;
+        color: inherit;
+        text-decoration: none;
+    }
+  
+  img {
+        max-width: 100%;
+        display: block;
+        object-fit: cover;
+    }
+  
+  body {
+        min-width: 320px;
+        word-break: normal;
+        font-family: 'Roboto', sans-serif;
+    } 
+  
+    /* global */
+    .list-reset {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    .btn-reset {
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    
+  h2 {
+    color: rgba(191, 96, 36, 1);
+    font-weight: 600;
+    font-size: 28px; 
+  }
+
+  h3 {
+    color: rgba(20, 20, 20, 1);
+    font-weight: 600;
+    font-size: 24px; 
+  }
+
+    /*-------Header --------------------------------------------------------*/
+    
+    .header { 
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .header-wrapper {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1142px;
+      height: 100px;
+      margin: 0 auto;
+      border-bottom: 1px solid #C4C4C4;
+    } 
+
+    .logo-wrapper {
+      height: 43px;
+      margin-top: 26px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: baseline;
+     /* border: solid 1px aqua; */
+    }
+
+    .logo-link {
+      margin-right: 23px;
+    }
+
+    .logo-link img {
+        display: inline-block;
+    }
+    .blue-field-text {
+      font-weight: 700; 
+      font-size: 28px;
+      color:rgba(69, 83, 109, 1); 
+      margin-left: 8px;
+      display: inline-block;
+    }
+    .best-resort-span {
+      font-weight: 400;
+      font-size: 14px;
+    }  
+
+    .contacts-header {
+      height: 18px;
+      margin-top: 43px;
+      /*border: solid 1px aqua;*/
+    }
+      
+    .header-list-link {
+        color: rgba(122, 122, 122, 1);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;        
+    }
+
+    .header-nav {
+        margin: 0 auto;
+        max-width: 1142px;
+        height: 78px;
+       /* border: solid 1px rgb(212, 0, 255);*/
+        display: flex;
+        justify-content: space-between;
+        padding-top: 25px;
+    }
+
+    .header-list-left {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .header-list-right {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+    } 
+  
+    /*-----Mountain Container-----------------------------------*/
+
+    .mountain-img-wrapper {
+      max-width: 1142px;
+      margin: 0 auto;
+      border-bottom: 1px solid #C4C4C4;
+     }
+
+     .mountain-img-wrapper {
+      max-height: 595px;
+      margin-bottom: 25px;
+     }
+
+     /*-----Section Rest in Blue Field----------------------------*/
+
+     .section-rest {
+      max-width: 1142px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      column-gap: 28px;
+      grid-template-rows: 190px 105px 1fr 1fr;
+      grid-template-areas: 
+        "title title"
+        "small-title small-title";
+      padding-bottom: 20px;
+      padding-top: 28px;
+      border-bottom: 1px solid #C4C4C4;
+      border-top: 1px solid #C4C4C4;  
+     }
+
+     .title-rest-wrapper {
+      height: 164px;
+      max-width: 735px;
+      grid-area: title; 
+    /*  border: solid 1px blueviolet; */
+     }
+
+     .section-rest-title{
+      line-height: 82px;
+      font-size: 64px;
+      font-weight: 600;
+     }
+
+     .section-rest-small-title {
+      grid-area: small-title; 
+      margin:  36px 0 33px;
+     }
+     .section-rest-text {
+      font-weight: 500;
+      font-size: 14px;
+      margin: 12px 0 72px;
+     }
+
+/*-----Section Booking-----------------------------------------*/
+
+     .section-booking {
+      max-width: 1142px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      column-gap: 28px;
+      grid-template-rows: 28px 1fr 1fr;
+      row-gap: 30px;
+      grid-template-areas: 
+        "title title"
+         "hause choose"
+         "hause loyalty";
+      padding: 67px 0 45px;
+      border-bottom: 1px solid #C4C4C4; 
+     }
+
+    .section-booking-title {
+      grid-area: title;
+    }
+
+    .hause-img-wrapper {
+      grid-area: hause;
+    }
+
+    .hause-content {
+    grid-area: hause;
+    padding-top: 490px;
+    padding-left: 34px;
+    }
+    .section-booking-text {
+      color: rgba(255, 255, 255, 1);
+      margin-bottom: 24px;
+    }
+
+    .booking-btn {
+     background-color: rgba(191, 96, 36, 1);
+     color: rgba(229, 198, 178, 1);
+     border: 1px solid rgba(229, 198, 178, 1); 
+     border-radius: 50px;
+    }
+    .choose-wrapper {
+      grid-area: choose;
+      background-color: rgba(234, 237, 242, 1);
+      padding-left: 73px;
+      padding-top: 84px;
+    }
+
+    .loyalty-wrapper {
+      grid-area: loyalty;
+      background-color: rgba(234, 237, 242, 1);
+      padding-left: 73px;
+      padding-top: 84px;
+    }
+
+  
